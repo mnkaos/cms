@@ -13,3 +13,4 @@ Autor: Minoru Nomura
   Dentro del folder generado se habrá creado un folder llamado admin. Accese a ese folder por medio de su navegador.
   
 Continuará...
+
