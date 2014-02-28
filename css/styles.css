@@ -1,0 +1,53 @@
+div.spacer_10{
+	height:10px;
+}
+.mensajes{
+	margin-bottom:20px;
+	padding:10px;
+	color:#1C1C1C;
+}
+.mensajes h6{
+	margin-bottom:0;
+}
+.mensajes img{
+	margin-right:10px;
+	vertical-align:middle;
+}
+.exito{
+	background-color:#DFF2BF;
+	border:1px solid #518B12;
+}
+.alert{
+	color:#714F13;
+	background-color:#FDF097;
+	border:1px solid #D08F14;
+}
+.error{
+	background-color:#FFBABA;
+	border:1px solid #D08F14;
+}
+table tr td{
+	padding:10px;
+	vertical-align:middle;
+}
+input[type="text"], input[type="password"], input[type="file"]{
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px 5px 5px 5px;
+	color: #666666;
+	height: 20px;
+	padding: 5px;
+	width: 300px;
+}
+fieldset {
+ 	border: 1px dotted #CCCCCC;
+	margin-bottom: 5px;
+	padding:20px;
+}
+.mar-right-10{
+	margin-right:10px;
+}
+hr{
+	border-top:1px dashed;
+	margin:20px 0;
+}

@@ -1,0 +1,493 @@
+/*---------------------------------
+	IMPORTS
+-----------------------------------*/
+@import url(spacers.css);
+
+@font-face {
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url('http://themes.googleusercontent.com/static/fonts/opensanscondensed/v6/gk5FxslNkTTHtojXrkp-xM6Eyu0BCqAfob_z3hhzRFzr7w4p9aSvGirXi6XmeXNA.woff') format('woff');
+}
+@font-face {
+font-family: 'Ultra';
+font-style: normal;
+font-weight: normal;
+src: local('Ultra'), url('http://themes.googleusercontent.com/static/fonts/ultra/v4/t6mIy8eXn5ez80xN9-0lvKCWcynf_cDxXwCLxiixG1c.woff') format('woff');
+}
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 800;
+src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+}
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+}
+fieldset{
+	margin-bottom:0;
+	border:1px dashed #CCCCCC;
+	padding:20px;
+	border-radius:10px 10px 10px 10px;
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+}
+/* ------------------- SPACERS --------------------*/
+hr.spacer{
+	width:90%;
+	border-top:none;
+	border-bottom:#CECECE 1px dashed;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+hr.spacer-solid{
+	width:100%;
+	border-top:none;
+	border-bottom:#E56900 1px dashed;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* ------------------- MENSAJES --------------------*/
+
+.info, .success, .warning, .error, .validation {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:10px 10px 10px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+		font-weight:bold;
+		display:none;
+		position:relative;
+}
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('../images/info.png');
+}
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image:url('../images/exito.png');
+}
+.warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('../images/alert.png');
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('../images/error.png');
+}
+.close-msg {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)) repeat scroll 0 0%, radial-gradient(#F2F2F2, #CCCCCC) repeat scroll 0 0 transparent;
+    border: 2px solid #E6E6E6;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0 1px 1px rgba(191, 191, 191, 0.75) inset, 0 2px 1px rgba(0, 0, 0, 0.25);
+    color: #B3B3B3;
+    float: right;
+    height: 23px;
+    position: absolute;
+    text-decoration: none;
+    text-indent: -9999px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    width: 23px;
+		right:8px;
+		top:5px;
+}
+.close-msg:after {
+    content: "✖";
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    right: 6px;
+    text-indent: 0;
+    top: 2px;
+}
+.close-msg:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)) repeat scroll 0 0%, radial-gradient(#B3B3B3, #8C8C8C) repeat scroll 0 0 transparent;
+    color: #E6E6E6;
+    cursor: pointer;
+    text-shadow: 0 -1px 0 rgba(153, 153, 153, 0.5);
+}
+.close-msg:active {
+    background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)) repeat scroll 0 0%, radial-gradient(#8C8C8C, #808080) repeat scroll 0 0 transparent;
+    cursor: pointer;
+    text-shadow: 0 -1px 0 rgba(26, 26, 26, 0.5);
+}
+/* ------------------- MENSAJES --------------------*/
+
+.center{
+	text-align:center;
+}
+#contenido{
+	background:#FFFFFF;
+}
+.padding_10{
+	padding:0 10px;
+}
+
+
+/* ---------------- BOTONES SECUNDARIOS ------------------*/
+div#botonesSecundarios, div#botonesSecundariosAdmin ul, div#buscador{
+	background:#999 url(../images/bgBtnSec.gif) repeat-x center;
+	border-radius:0 0 5px 5px;
+	height:32px;
+	font:13px/1.5 Tahoma, Geneva, sans-serif;
+
+	text-align:center;
+}
+div#botonesSecundariosAdmin ul{
+	margin-top:0;	
+}
+div#botonesSecundariosAdmin ul li{
+	display:inline;
+	margin-left:15px;
+}
+div#botonesSecundariosAdmin ul li:first-child{
+	margin-left:0;
+}
+div#botonesSecundariosAdmin ul li a, #main-new-details a{
+	color:#000000;
+}
+#main-new-details a{
+	color:#FFFFFF;
+	margin-bottom:10px;
+}
+div#botonesSecundariosAdmin ul li a:hover, #main-new-details a:hover{
+	color:#960;
+	position:relative;
+	top:1px;
+	left:1px;
+}
+div#botonesSecundariosAdmin ul li a.current{
+	color:#960;
+}
+input#busqueda{
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:none;
+	width:200px;
+	height:15px;
+	padding:3px;
+}
+
+/* ---------------- BOTONES SECUNDARIOS ------------------*/
+
+
+/* ------------------- ADMIN -----------------------*/
+#admin-logout{
+	font-size:11px;
+	color:#FFFFFF;
+	text-align:right;	
+}
+#admin-logout a{
+	color:#CCCCCC;
+}
+#admin-logout a:hover{
+	color:#333;
+}
+.messageboxadmin{
+	border:1px solid #000000;
+	background:#ffc;
+	color:#333333;
+	padding: 5px;
+	margin-right:10px;
+}
+.messageboxokadmin{
+	width:auto;
+	margin-left:30px;
+	border:1px solid #349534;
+	background:#79a01b;
+	color:#FFFFFF;
+	padding: 5px;
+	
+}
+.messageboxerroradmin{
+	border:1px solid #CC0000;
+	background:#F7CBCA;
+	color:#CC0000;
+	padding: 5px;
+}
+.messageboxadmin, .messageboxokadmin, .messageboxerroradmin{
+	font-size:11px;
+	margin-left:10px;
+}
+div.login_admin input.general {
+    background: none repeat scroll 0 0 #850C18;
+    border: 0 none;
+    color: #FFFFFF;
+    height: 35px;
+    width: 210px;
+		border-radius: 7px 7px 7px 7px;
+		margin: 0 5px 0 0;
+    padding: 3px 4px;
+}
+.admin-form input.default{
+	height:20px;
+	width:200px;
+	padding:10px;
+}
+h2.login{
+  color: #3B3B31;
+  font: 30px/36px 'Open Sans Condensed',sans-serif;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+
+}
+#admin-main-icons img{
+	position:relative;
+	top:7px;
+}
+#admin-main-icons img:first-child{
+	margin-left:5px;
+}
+#admin-main-icons{
+	margin:50px 0 50px 0;
+}
+#admin-main-icons{
+	font-size:11px;
+	line-height:1.0;
+}
+#admin-main-icons h1{
+	font:18px 'Open Sans Condensed',sans-serif;
+	text-transform:uppercase;
+	margin-bottom:0;
+}
+#admin-main-icons a, #location a{
+	color:#9F2A15;
+}
+#admin-main-icons a:hover, #location a:hover{
+	color:#F30;
+}
+.bg-bco{
+	background:#FFF;
+	border:1px solid #CCC;	
+	border-radius:0 0 5px 5px;
+}
+.padding-admin{
+	padding:5px;
+	color:#585858;
+}
+.padding-admin h1{
+	font:14px 'Ubuntu Condensed',sans-serif;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+.padding-admin div.styled-select {
+	background: url("../images/arrowSelect.png") no-repeat scroll right center #DDDDDD;
+	height: 34px;
+	overflow: hidden;
+	width: 240px;
+}
+div.styled-select select {
+	background: none repeat scroll 0 0 transparent;
+	border: 1px solid #CCCCCC;
+	font-size: 16px;
+	height: 34px;
+	padding: 5px;
+	width: 268px;
+}
+div.seccion-admin h1{
+	text-transform:uppercase;
+}
+.admin-button{
+	width:200px;
+}
+#location{
+	background:#FFFFFF url(../admin/images/bgLocation.jpg) repeat-x;
+	border-bottom:1px solid #cccccc;
+	min-height:20px;
+	font-size:10px;
+}
+#location img{
+	margin:3px 2px;
+}
+#location ul li{
+	display:inline;
+	margin-left:20px;
+	padding-right:20px;
+	border-right:1px solid #CCC;
+	width:100%;
+	position:relative;
+}
+#location ul li ul li{
+	border:none;
+	margin: 0;
+  padding: 0;
+}
+#location ul li ul li a:hover{
+	color:#FFF;
+}
+#location ul li:last-child{
+	border-right:none;
+}
+#act-location{
+	position:absolute;
+	top:30px;
+	border:1px solid #7f5500;
+	padding:0 10px 0 0;
+	left:-15px;
+	color:#FFFFFF;
+	background:#996600;
+	border-radius:3px;
+	width:110px;
+	text-align:center;
+	margin-bottom:40px;
+	display:none;
+}
+#act-location #img-act-location{
+	position:relative;
+}
+#img-act-location img{
+	position:absolute;
+	top:-15px;
+	left:19px;
+}
+#user-options{
+	position:absolute;
+	top:30px;
+	border:1px solid #7f5500;
+	padding:0 10px 0 0;
+	left:-15px;
+	color:#FFFFFF;
+	background:#996600;
+	border-radius:3px;
+	width:110%;
+	text-align:right;
+	margin-bottom:40px;
+	display:none;
+}
+#user-options ul li{
+	margin-left:0;
+	display:block;
+	padding:10px 0;
+}
+#user-options #img-user-options{
+	position:relative;
+}
+#img-user-options img{
+	position:absolute;
+	top:-15px;
+	right:5px;
+}
+li.user-options:hover > #user-options{
+	display:block;
+}
+#noticias-table{
+	margin:0 10px 10px 10px;
+	width:920px;
+}
+#noticias-table td{
+	padding:10px;
+	border:1px solid #CCCCCC;
+
+}
+#noticias-table td.new-options-btn{
+	text-align:center;
+	background:url(../images/drag_side_widget.png) right center no-repeat;
+}
+#noticias-table th{
+	border:none;
+	padding:10px;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	font-weight:bold;
+	color:#CCCCCC;
+	background: rgb(100,100,100); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(100,100,100,1) 0%, rgba(64,64,64,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(100,100,100,1)), color-stop(100%,rgba(64,64,64,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(100,100,100,1) 0%,rgba(64,64,64,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(100,100,100,1) 0%,rgba(64,64,64,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(100,100,100,1) 0%,rgba(64,64,64,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(100,100,100,1) 0%,rgba(64,64,64,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#646464', endColorstr='#404040',GradientType=0 ); /* IE6-9 */
+}
+#noticias-table th:first-child{
+	border-radius:5px 0 0 0;
+	border:none;
+}
+#noticias-table th:last-child{
+	border-radius:0 5px 0 0;
+	border:none;
+}
+#noticias input.default{
+	height: 20px;
+  padding: 10px;
+  width: 300px;
+	border:1px solid #CCC;
+}
+#noticias h3{
+	text-transform:uppercase;
+}
+#noticias h6{
+	margin-bottom:0;
+}
+#noticias select{
+  padding: 10px;
+  width: 300px;
+	border:1px solid #CCC;
+}
+.act-lista{
+	margin-left:10px;
+}
+#date_time{
+	margin-right:5px;
+}
+h6#msg{
+	text-align:center;
+	margin-bottom:20px;
+}
+#img-top5{
+	border-radius:5px;
+	margin-bottom:3px;
+	border:1px solid #CCC;
+}
+#player{
+	background: none repeat scroll 0 0 #000000;
+	border-top: 1px solid #4E4E4E;
+	height: 185px;
+	width: 100%;
+	text-align:center;
+	height:100%;
+}
+.steps{
+	font: 30px/36px 'Open Sans Condensed',sans-serif;
+	color:#CCCCCC;
+	text-transform:uppercase;
+}
+.nota-admin{
+	color:#900;
+	font-size:10px;
+}
+.borrar_folder {
+  left: 70px;
+  position: relative;
+  top: 40px;
+}
+label.error{
+	margin-left:10px;
+	font: 12px 'Open Sans Condensed',sans-serif;
+	color:#990000;
+}
+	
+/* ------------------- ADMIN -----------------------*/
+
+/* ----------------- MENSAJES ---------------------*/
+.mensajes{
+	text-align:center;
+	font:14/1.5 'Ubuntu Condensed',sans-serif;
+	color:#585858;
+	display:block;
+}
+#note .mensajes img{
+	border:none;
+}
+/* ----------------- MENSAJES ---------------------*/
